@@ -95,7 +95,6 @@ export function Navigation() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                {item.name}
                 {activeSection === item.href.substring(1) && (
                   <motion.div
                     layoutId="activeSection"
