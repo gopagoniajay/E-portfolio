@@ -54,9 +54,9 @@ npm run dev
 # Build for production
 npm run build
 
----
 
-## 📁 Project Structure
+---
+📁 Project Structure
 
 personal_portfolio/
 ├── public/
@@ -70,6 +70,8 @@ personal_portfolio/
 ├── tsconfig.json
 ├── package.json
 └── README.md
+
+---
 
 🎯 Key Sections
 
@@ -85,9 +87,14 @@ Experience – Academic and professional experience
 
 Contact – Easy way to reach out
 
+---
+
 📱 Mobile Responsive
 
 The portfolio is fully responsive and optimized for mobile devices, ensuring a smooth user experience across all screen sizes.
+
+
+---
 
 👤 Author
 
