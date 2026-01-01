@@ -53,3 +53,7 @@ npm run dev
 
 # Build for production
 npm run build
+
+ ## 📁 Project Structure
+
+The portfolio is fully responsive and optimized for mobile devices, ensuring a smooth user experience across all screen sizes.
