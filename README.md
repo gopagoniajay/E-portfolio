@@ -21,3 +21,34 @@ A visually engaging landing section that introduces the developer with a concise
 - 🚀 **Production Ready** – Easily deployable on Vercel  
 
 ---
+## 🛠️ Tech Stack
+
+| **Category** | **Technologies** |
+|-------------|------------------|
+| **Frontend** | Next.js, React |
+| **Language** | TypeScript |
+| **Styling** | CSS |
+| **Configuration** | Next.js Config, TypeScript Config |
+| **Package Manager** | npm |
+| **Version Control** | Git, GitHub |
+| **Deployment** | Vercel |
+
+---
+
+## 🚀 Quick Start
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/personal_portfolio.git
+
+# Navigate to project directory
+cd personal_portfolio
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
