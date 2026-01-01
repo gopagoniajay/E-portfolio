@@ -56,9 +56,20 @@ npm run build
 
 ---
 
----
+## 📁 Project Structure
 
-##
+personal_portfolio/
+├── public/
+│   └── assets/
+├── src/
+│   ├── app/
+│   ├── components/
+│   ├── styles/
+│   └── utils/
+├── next.config.ts
+├── tsconfig.json
+├── package.json
+└── README.md
 
 
 
