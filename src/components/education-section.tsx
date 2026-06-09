@@ -9,7 +9,7 @@ const educationData = [
     institution: "Institute of Aeronautical Engineering, Hyderabad, India",
     degree: "B.Tech in Computer Science and Engineering (Artificial Intelligence and Machine Learning)",
     period: "Expected graduation: May 2027",
-    gpa: "7.3",
+    gpa: "7.62",
     color: "from-blue-500 to-cyan-500",
   },
   {
@@ -19,13 +19,7 @@ const educationData = [
     gpa: "7.5",
     color: "from-purple-500 to-pink-500",
   },
-  {
-    institution: "TS Model School, Dariyapur, Peddapalli",
-    degree: "SSC",
-    period: "March 2021",
-    gpa: "100%",
-    color: "from-green-500 to-emerald-500",
-  },
+
 ]
 
 export function EducationSection() {
@@ -33,7 +27,7 @@ export function EducationSection() {
     <section id="education" className="py-20 bg-muted/30 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-blue-500/5 to-transparent" />
-      
+
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -70,10 +64,10 @@ export function EducationSection() {
               <Card className="hover:shadow-2xl transition-all duration-300 border-2 hover:border-primary/50 overflow-hidden group relative">
                 {/* Gradient overlay on hover */}
                 <div className={`absolute inset-0 bg-gradient-to-r ${edu.color} opacity-0 group-hover:opacity-5 transition-opacity duration-300`} />
-                
+
                 <CardHeader>
                   <div className="flex items-start gap-4">
-                    <motion.div 
+                    <motion.div
                       className={`p-3 bg-gradient-to-br ${edu.color} rounded-xl shadow-lg`}
                       whileHover={{ rotate: 360 }}
                       transition={{ duration: 0.6 }}

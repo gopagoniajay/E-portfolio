@@ -3,6 +3,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Code2, ExternalLink, TrendingUp, Trophy } from "lucide-react"
+import { SiLeetcode, SiHackerrank, SiGeeksforgeeks } from "react-icons/si"
 import { motion } from "framer-motion"
 
 const codingProfiles = [
@@ -12,7 +13,8 @@ const codingProfiles = [
     year: "2025",
     link: "https://leetcode.com/u/gopagoniajay/",
     color: "from-orange-500 to-yellow-500",
-    icon: "🔥",
+    icon: SiLeetcode,
+    badgeEmoji: "🔥",
   },
   {
     platform: "HackerRank",
@@ -20,7 +22,8 @@ const codingProfiles = [
     year: "2025",
     link: "https://www.hackerrank.com/profile/ajaygopagoni6",
     color: "from-green-500 to-emerald-500",
-    icon: "⭐",
+    icon: SiHackerrank,
+    badgeEmoji: "⭐",
   },
   {
     platform: "GeeksForGeeks",
@@ -28,7 +31,8 @@ const codingProfiles = [
     year: "2025",
     link: "https://www.geeksforgeeks.org/profile/ajaygopgtn1",
     color: "from-green-600 to-teal-500",
-    icon: "💚",
+    icon: SiGeeksforgeeks,
+    badgeEmoji: "💚",
   },
 ]
 
@@ -36,7 +40,7 @@ export function CodingProfilesSection() {
   return (
     <section id="coding" className="py-20 relative overflow-hidden">
       {/* Animated background elements */}
-      <motion.div 
+      <motion.div
         className="absolute top-20 right-10 w-72 h-72 bg-green-400/10 rounded-full blur-3xl"
         animate={{
           scale: [1, 1.2, 1],
@@ -47,7 +51,7 @@ export function CodingProfilesSection() {
           repeat: Infinity,
         }}
       />
-      
+
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -72,43 +76,45 @@ export function CodingProfilesSection() {
         </motion.div>
 
         <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
-          {codingProfiles.map((profile, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              whileHover={{ y: -10 }}
-            >
-              <Card className="h-full hover:shadow-2xl transition-all duration-300 border-2 hover:border-primary/50 group relative overflow-hidden">
-                {/* 🔥 Important: allow clicks to pass through */}
-                <div
-                  className={`pointer-events-none absolute inset-0 bg-gradient-to-br ${profile.color} opacity-0 group-hover:opacity-10 transition-opacity duration-300`}
-                />
-                
-                <CardHeader>
-                  <div className="flex flex-col items-center text-center gap-3">
-                    <motion.div 
-                      className={`p-4 bg-gradient-to-br ${profile.color} rounded-2xl shadow-xl relative`}
-                      whileHover={{ rotate: 360, scale: 1.1 }}
-                      transition={{ duration: 0.6 }}
-                    >
-                      <Code2 className="h-7 w-7 text-white" />
-                      {/* Icon Badge */}
+          {codingProfiles.map((profile, index) => {
+            const PlatformIcon = profile.icon
+            return (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                whileHover={{ y: -10 }}
+              >
+                <Card className="h-full hover:shadow-2xl transition-all duration-300 border-2 hover:border-primary/50 group relative overflow-hidden">
+                  {/* 🔥 Important: allow clicks to pass through */}
+                  <div
+                    className={`pointer-events-none absolute inset-0 bg-gradient-to-br ${profile.color} opacity-0 group-hover:opacity-10 transition-opacity duration-300`}
+                  />
+
+                  <CardHeader>
+                    <div className="flex flex-col items-center text-center gap-3">
                       <motion.div
-                        className="absolute -top-2 -right-2 text-2xl"
-                        animate={{ rotate: [0, 10, -10, 0] }}
-                        transition={{ duration: 2, repeat: Infinity }}
+                        className={`p-4 bg-gradient-to-br ${profile.color} rounded-2xl shadow-xl relative`}
+                        whileHover={{ rotate: 360, scale: 1.1 }}
+                        transition={{ duration: 0.6 }}
                       >
-                        {profile.icon}
+                        <PlatformIcon className="h-7 w-7 text-white" />
+                        {/* Icon Badge */}
+                        <motion.div
+                          className="absolute -top-2 -right-2 text-2xl"
+                          animate={{ rotate: [0, 10, -10, 0] }}
+                          transition={{ duration: 2, repeat: Infinity }}
+                        >
+                          {profile.badgeEmoji}
+                        </motion.div>
                       </motion.div>
-                    </motion.div>
-                    <CardTitle className="text-xl group-hover:text-primary transition-colors">
-                      {profile.platform}
-                    </CardTitle>
-                  </div>
-                </CardHeader>
+                      <CardTitle className="text-xl group-hover:text-primary transition-colors">
+                        {profile.platform}
+                      </CardTitle>
+                    </div>
+                  </CardHeader>
                 <CardContent className="text-center space-y-4">
                   {/* Stats Display */}
                   <div className="space-y-2">
@@ -133,7 +139,7 @@ export function CodingProfilesSection() {
                       <span>Active in {profile.year}</span>
                     </div>
                   </div>
-                  
+
                   <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
                     <Button
                       size="sm"
@@ -150,7 +156,7 @@ export function CodingProfilesSection() {
                 </CardContent>
               </Card>
             </motion.div>
-          ))}
+          )})}
         </div>
 
         {/* Stats Summary */}
@@ -178,7 +184,7 @@ export function CodingProfilesSection() {
             <div className="hidden md:block w-px h-12 bg-border" />
             <div>
               <p className="text-3xl font-bold bg-gradient-to-r from-pink-600 to-orange-600 bg-clip-text text-transparent">
-                2025
+                2026
               </p>
               <p className="text-sm text-muted-foreground mt-1">Active Year</p>
             </div>
