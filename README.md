@@ -1,36 +1,106 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🚀 Neural Portfolio | AjayGopagoni
 
-## Getting Started
+A modern, clean, and professional developer portfolio built using **Next.js**, **React**, and **TypeScript**.  
+This portfolio showcases projects, skills, and experience with a responsive layout, reusable components, and optimized performance.
 
-First, run the development server:
+---
+
+## 🧠 Hero Section
+
+A visually engaging landing section that introduces the developer with a concise overview, clean typography, and smooth navigation across sections.
+
+---
+
+## ✨ Features
+
+- 🎨 **Modern UI** – Clean and minimal design with professional layout  
+- ⚡ **Fast & Optimized** – Built using Next.js for optimized performance  
+- 📱 **Fully Responsive** – Works seamlessly across desktop, tablet, and mobile  
+- 🧩 **Reusable Components** – Modular and scalable component structure  
+- 🧠 **SEO Friendly** – Next.js optimized routing and rendering  
+- 🚀 **Production Ready** – Easily deployable on Vercel  
+
+---
+
+## 🛠️ Tech Stack
+
+| **Category** | **Technologies** |
+|-------------|------------------|
+| **Frontend** | Next.js, React |
+| **Language** | TypeScript |
+| **Styling** | CSS |
+| **Configuration** | Next.js Config, TypeScript Config |
+| **Package Manager** | npm |
+| **Version Control** | Git, GitHub |
+| **Deployment** | Vercel |
+
+---
+
+## 🚀 Quick Start
 
 ```bash
+# Clone the repository
+git clone https://github.com/gopagoniajay/E-portfolio
+
+# Navigate to project directory
+cd personal_portfolio
+
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Build for production
+npm run build
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
+📁 Project Structure
 
-## Learn More
+personal_portfolio/
+├── public/
+│   └── assets/
+├── src/
+│   ├── app/
+│   ├── components/
+│   ├── styles/
+│   └── utils/
+├── next.config.ts
+├── tsconfig.json
+├── package.json
+└── README.md
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+🎯 Key Sections
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Hero – Introduction and portfolio overview
 
-## Deploy on Vercel
+About – Personal background and skill summary
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Skills – Technologies and tools expertise
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Projects – Featured projects with descriptions and links
+
+Experience – Academic and professional experience
+
+Contact – Easy way to reach out
+
+---
+
+📱 Mobile Responsive
+
+The portfolio is fully responsive and optimized for mobile devices, ensuring a smooth user experience across all screen sizes.
+
+
+---
+
+👤 Author
+
+AjayGopagoni
+
+🎓 Computer Science / AI / Software Development Enthusiast
+
+💼 Aspiring Software Engineer
+
